@@ -1,7 +1,7 @@
-# Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
+﻿# Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Alex Ander](https://up.htmlacademy.ru/javascript/13/user/643343).
-* Наставник: `Неизвестно`.
+* Наставник: `Арсений Ильяшов`.
 
 ---
 
