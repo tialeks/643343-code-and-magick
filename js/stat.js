@@ -19,7 +19,19 @@ window.renderStatistics = function (ctx, names, times) {
 	ctx.fillText('Список результатов:', 210, 70);
 	for (var i = 0; i < names.length; i++) {
 		console.log(names[i], times[i]);
-		
+	}
+			var points = function (times) {
+		var max = times[0];
+		for (var i = 0; i < times.length; i++) {
+		if (times[i] > times[0]) {
+			max = times[i];
+		}
+		}
+		return max;
+	};
+	//console.log(max);
+	//ctx.fillStyle = 'rgba(255, 0, 0, 1)';
+	//ctx.fillRect(10, 20, 40, 150);
 	}
 /*	var getMaxElement = function(times) {
 		var maxElement = times[0];
@@ -30,6 +42,19 @@ window.renderStatistics = function (ctx, names, times) {
 		}
 		return maxElement;
 	};
+
+	for (var currentIndex = 0; currentIndex <= usersByDay.length - 2; currentIndex++) {
+	//var currentIndex = 0;
+		var minPoints = times[curretIndex];
+		for (var j = currentIndex + 1; j <= times.length -1; j++) {
+			if (times[j] < minPoints) {
+				minPoints = times[j];
+				var swap = times[currentIndex];
+				times[currentIndex] = minPoints;
+				isersByDay[j] = swap
+			}
+		}
+	}
 for (var i = 0; i < names.length; i++) {
 	ctx.fillStyle = 'rgba(255, 0, 0, 1)';
 	if (names[i] === maxElement) {
